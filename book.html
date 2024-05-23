@@ -6,5 +6,28 @@
   </head>
   <body>
 
+  <h1>Buch Formular</h1>
+
+  <form action="https://it.bzz.ch/demo/formdata/index.php" method="post">
+    <label for="booktitel" >Buchtitel</label>
+    <input name="booktitel" id="booktitel" type="text" minlength="2" maxlength="30" required>
+    <br>
+    <label for="author" >Autoren</label>
+    <input name="author" id="author" type="text" minlength="5" maxlength="40">
+    <br>
+    <label for="price" >Preis</label>
+    <input type="number" name="price" id="price" step="0.01" min="0.05" max="99.95">
+    <br>
+    <label for="publication_date" >Erscheinungsdatum</label>
+    <input type="date" name="publication_date" id="publication_date" pattern="\d{2}\.\d{2}\.\d{4}" placeholder="tt.mm.jjjj">
+    <br>
+    <label for="edition" >Auflage</label>
+    <input type="number" id="edition" name="edition" min="1" max="9">
+    <br>
+    <button type="submit">Absenden</button>
+    <br>
+    <button type="reset">Zurücksetzen</button>
+  </form>
+  
   </body>
 </html>
